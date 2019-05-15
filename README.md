@@ -9,14 +9,18 @@ Python 3 standard lib
 
 ## Usage
 
-Set up the config file. Default section is used whenever there is no value for a key specified in your config section.
+Set up the config file. Can either edit the `DEFAULT` section or add a section of your own.
 
-Run the python script with the required command line options
+Run the python script:
 
 ```
-python main.py <your_config_section>  
+python main.py --options  
 ```
+
+### Options
+
+`-c` `--config` :- Specify the config section to use. Note that `DEFAULT` will still be used for any keys that aren't specified
 
 ### Examples
 
-`python main.py TEST`
+`python main.py --config TEST`
